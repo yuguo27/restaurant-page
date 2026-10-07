@@ -1,0 +1,29 @@
+/node_modules
+/test/js
+/test/fixtures/temp-*
+/test/temp
+/test/ChangesAndRemovals
+/test/ChangesAndRemovalsTemp
+/test/**/dev-defaults.webpack.lock
+/test/**/generated/**
+/examples/**/dist
+/examples/nodejs-addons/build/**
+/assembly/**/*.wat
+/assembly/**/*.wasm
+/coverage
+/.nyc_output
+/.jest-cache
+.DS_Store
+*.log
+.idea
+.vscode
+.cache
+.eslintcache
+.cspellcache
+package-lock.json
+# Except the comparison corpora: each one's lockfile is the record of what
+# the benchmarks and the invariant sweeps actually ran against.
+!/tooling/comparison/*/package-lock.json
+/tooling/comparison/*/node_modules
+/events.json
+/dist
