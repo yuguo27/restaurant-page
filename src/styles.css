@@ -1,9 +1,13 @@
 html,
 body{
     margin: 0;
+    display: grid;
+    grid-row: 1fr 2fr 1fr;
+    background-color: #E8DCCA;
 }
 
-#header{
+#header,
+#footer{
     background-color: grey;
     padding: 50px;
     display: flex;
@@ -13,31 +17,81 @@ body{
 }
 
 #container{
-    background-color: darkgoldenrod;;
+    background-color: #E8DCCA;;
     min-height: 0;
     height: 100vh;
-    padding: 0 200px;
+    padding: 10px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 50px 0 100px;
 
 }
 
 .card{
-    
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 5%;
+    padding: 5px;
+    background-color: white;
 }
 
-.biography{
+#container > .card:nth-of-type(2) {
+    height: 400px;
+}
+
+.biography {
     text-align: center;
-    font-weight: 25px;
+    font-weight: 15px;
 }
-
+#header button{
+    background-color: black;
+}
 button{
     border-radius: 999px;
     height: 50px;
     width: 100px;
-    background-color: yellow;
-    color: black;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
 }
 
 .restaurant_image{
     width: 500px;
     height: 500px;
+}
+
+#footer button{
+    height: 20px;
+
+}
+
+#footer p{
+    color: white;
+}
+
+#footer{
+    max-height: 100px;
+}
+
+.menu{
+    display: grid;
+    gap: 8px;
+}
+
+.menu .card{
+    height: 150px;
+    padding: 15px;
+}
+
+.menu p{
+    font-size: 20px;
+    font-weight: bold;
+
 }
