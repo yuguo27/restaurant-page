@@ -3,7 +3,7 @@ export default function loadContact() {
     container.replaceChildren();
 
     const contact = document.createElement("div");
-    card.classList.add("contact");
+    contact.classList.add("contact");
 
     const card = document.createElement("div");
     card.classList.add("card");
@@ -18,5 +18,5 @@ export default function loadContact() {
     biography.appendChild(title);
     card.appendChild(biography);
     contact.appendChild(card);
-    container.appendChild(card);
+    container.appendChild(contact);
 }

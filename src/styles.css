@@ -95,3 +95,7 @@ button{
     font-weight: bold;
 
 }
+
+.contact .card{
+    height: 100px;
+}

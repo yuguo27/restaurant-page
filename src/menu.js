@@ -7,7 +7,6 @@ export default function loadMenu() {
     menu.classList.add("menu")
     const title = document.createElement("h1");
     title.textContent = "Our Menu";
-    container.appendChild(menu);
     menu.appendChild(title)
 
 

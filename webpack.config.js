@@ -18,12 +18,13 @@ export default {
     watchFiles: ["./src/home/home.html"],
   },
 
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/home/home.html",
-      filename: "home.html",
-    }),
-  ],
+
+plugins: [
+  new HtmlWebpackPlugin({
+    template: "./src/home/home.html",
+    filename: "index.html",
+  }),
+],
 
   module: {
     rules: [
